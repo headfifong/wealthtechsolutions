@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center gap-2">
-              <img src="/images/logo_company.png" alt="Logo" className="h-10 w-10 object-contain" />
+              <img src={`${import.meta.env.BASE_URL}images/logo_company.png`} alt="Logo" className="h-10 w-10 object-contain" />
               <div className="flex flex-col">
                 <span className="font-bold text-xl text-prepro-dark leading-none">{t('app.name')}</span>
                 <span className="text-xs text-prepro-blue font-medium tracking-wide">{t('app.code')}</span>
